@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF35856719434C1F00AFA692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35856619434C1F00AFA692 /* AppDelegate.swift */; };
+		BF35856919434C1F00AFA692 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BF35856819434C1F00AFA692 /* GameScene.sks */; };
+		BF35856B19434C1F00AFA692 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35856A19434C1F00AFA692 /* GameScene.swift */; };
+		BF35856D19434C1F00AFA692 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35856C19434C1F00AFA692 /* GameViewController.swift */; };
+		BF35857019434C1F00AFA692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF35856E19434C1F00AFA692 /* Main.storyboard */; };
+		BF35857219434C1F00AFA692 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF35857119434C1F00AFA692 /* Images.xcassets */; };
+		BF35857E19434C1F00AFA692 /* GreedySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35857D19434C1F00AFA692 /* GreedySwiftTests.swift */; };
+		BF35858819434C3700AFA692 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35858719434C3700AFA692 /* Snake.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF35857819434C1F00AFA692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF35855919434C1F00AFA692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF35856019434C1F00AFA692;
+			remoteInfo = GreedySwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF35856119434C1F00AFA692 /* GreedySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreedySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF35856519434C1F00AFA692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF35856619434C1F00AFA692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF35856819434C1F00AFA692 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		BF35856A19434C1F00AFA692 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		BF35856C19434C1F00AFA692 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BF35856F19434C1F00AFA692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF35857119434C1F00AFA692 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF35857719434C1F00AFA692 /* GreedySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreedySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF35857C19434C1F00AFA692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF35857D19434C1F00AFA692 /* GreedySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedySwiftTests.swift; sourceTree = "<group>"; };
+		BF35858719434C3700AFA692 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF35855E19434C1F00AFA692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF35857419434C1F00AFA692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF35855819434C1F00AFA692 = {
+			isa = PBXGroup;
+			children = (
+				BF35856319434C1F00AFA692 /* GreedySwift */,
+				BF35857A19434C1F00AFA692 /* GreedySwiftTests */,
+				BF35856219434C1F00AFA692 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF35856219434C1F00AFA692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF35856119434C1F00AFA692 /* GreedySwift.app */,
+				BF35857719434C1F00AFA692 /* GreedySwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF35856319434C1F00AFA692 /* GreedySwift */ = {
+			isa = PBXGroup;
+			children = (
+				BF35858719434C3700AFA692 /* Snake.swift */,
+				BF35856A19434C1F00AFA692 /* GameScene.swift */,
+				BF35856619434C1F00AFA692 /* AppDelegate.swift */,
+				BF35856819434C1F00AFA692 /* GameScene.sks */,
+				BF35856C19434C1F00AFA692 /* GameViewController.swift */,
+				BF35856E19434C1F00AFA692 /* Main.storyboard */,
+				BF35857119434C1F00AFA692 /* Images.xcassets */,
+				BF35856419434C1F00AFA692 /* Supporting Files */,
+			);
+			path = GreedySwift;
+			sourceTree = "<group>";
+		};
+		BF35856419434C1F00AFA692 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF35856519434C1F00AFA692 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF35857A19434C1F00AFA692 /* GreedySwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF35857D19434C1F00AFA692 /* GreedySwiftTests.swift */,
+				BF35857B19434C1F00AFA692 /* Supporting Files */,
+			);
+			path = GreedySwiftTests;
+			sourceTree = "<group>";
+		};
+		BF35857B19434C1F00AFA692 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF35857C19434C1F00AFA692 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF35856019434C1F00AFA692 /* GreedySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF35858119434C1F00AFA692 /* Build configuration list for PBXNativeTarget "GreedySwift" */;
+			buildPhases = (
+				BF35855D19434C1F00AFA692 /* Sources */,
+				BF35855E19434C1F00AFA692 /* Frameworks */,
+				BF35855F19434C1F00AFA692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreedySwift;
+			productName = GreedySwift;
+			productReference = BF35856119434C1F00AFA692 /* GreedySwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF35857619434C1F00AFA692 /* GreedySwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF35858419434C1F00AFA692 /* Build configuration list for PBXNativeTarget "GreedySwiftTests" */;
+			buildPhases = (
+				BF35857319434C1F00AFA692 /* Sources */,
+				BF35857419434C1F00AFA692 /* Frameworks */,
+				BF35857519434C1F00AFA692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF35857919434C1F00AFA692 /* PBXTargetDependency */,
+			);
+			name = GreedySwiftTests;
+			productName = GreedySwiftTests;
+			productReference = BF35857719434C1F00AFA692 /* GreedySwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF35855919434C1F00AFA692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = wangzhe;
+				TargetAttributes = {
+					BF35856019434C1F00AFA692 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					BF35857619434C1F00AFA692 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = BF35856019434C1F00AFA692;
+					};
+				};
+			};
+			buildConfigurationList = BF35855C19434C1F00AFA692 /* Build configuration list for PBXProject "GreedySwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF35855819434C1F00AFA692;
+			productRefGroup = BF35856219434C1F00AFA692 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF35856019434C1F00AFA692 /* GreedySwift */,
+				BF35857619434C1F00AFA692 /* GreedySwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF35855F19434C1F00AFA692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF35857219434C1F00AFA692 /* Images.xcassets in Resources */,
+				BF35856919434C1F00AFA692 /* GameScene.sks in Resources */,
+				BF35857019434C1F00AFA692 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF35857519434C1F00AFA692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF35855D19434C1F00AFA692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF35858819434C3700AFA692 /* Snake.swift in Sources */,
+				BF35856B19434C1F00AFA692 /* GameScene.swift in Sources */,
+				BF35856D19434C1F00AFA692 /* GameViewController.swift in Sources */,
+				BF35856719434C1F00AFA692 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF35857319434C1F00AFA692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF35857E19434C1F00AFA692 /* GreedySwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF35857919434C1F00AFA692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF35856019434C1F00AFA692 /* GreedySwift */;
+			targetProxy = BF35857819434C1F00AFA692 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF35856E19434C1F00AFA692 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF35856F19434C1F00AFA692 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF35857F19434C1F00AFA692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF35858019434C1F00AFA692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF35858219434C1F00AFA692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GreedySwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF35858319434C1F00AFA692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GreedySwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF35858519434C1F00AFA692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GreedySwift.app/GreedySwift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GreedySwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		BF35858619434C1F00AFA692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GreedySwift.app/GreedySwift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GreedySwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF35855C19434C1F00AFA692 /* Build configuration list for PBXProject "GreedySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF35857F19434C1F00AFA692 /* Debug */,
+				BF35858019434C1F00AFA692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF35858119434C1F00AFA692 /* Build configuration list for PBXNativeTarget "GreedySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF35858219434C1F00AFA692 /* Debug */,
+				BF35858319434C1F00AFA692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF35858419434C1F00AFA692 /* Build configuration list for PBXNativeTarget "GreedySwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF35858519434C1F00AFA692 /* Debug */,
+				BF35858619434C1F00AFA692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF35855919434C1F00AFA692 /* Project object */;
+}
