@@ -216,8 +216,8 @@ class GameScene: SKScene {
         CGPathAddLineToPoint(path, nil, -10.0, 10.0)
         CGPathAddLineToPoint(path, nil, -10.0, -10.0)
         apple.path = path
-        apple.fillColor = SKColor(red: 200.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 7.0)
-        apple.strokeColor = SKColor(red: 200.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+        apple.fillColor = SKColor(red: 150.0/255.0, green: 0.0/255.0, blue: 100.0/255.0, alpha: 7.0)
+        apple.strokeColor = SKColor(red: 150/255.0, green: 0.0/255.0, blue: 100.0/255.0, alpha: 1.0)
         apple.position = pos
         gameScene.addChild(apple)
         
