@@ -24,6 +24,9 @@ class Snake{
     // the array to store the block objs
     var blockArr:SKShapeNode[]
     
+    // the direction of snake
+    var direction:Int[] = [0, 1]
+    
     
     
     init(sceneArr:CGFloat[], gameScene:GameScene){
@@ -59,8 +62,10 @@ class Snake{
         if is_head {
             block.fillColor = SKColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
             block.strokeColor = SKColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+            block.name = "snake_head"
         }
         block.position = CGPoint(x:x, y:y)
+        
         
         gameScene.addChild(block)
         
@@ -69,11 +74,31 @@ class Snake{
     }
     
     func crawl() {
-        println("crawl")
+//        println("crawl")
 //        blockPosArr[0][0] = blockPosArr[0][0]
 //        blockPosArr[0][1] = blockPosArr[0][1] + 20.0
 //        self.blockArr[0].position = CGPoint(x: blockPosArr[0][0], y: blockPosArr[0][1])
+        var header_nex_pos = [blockPosArr[0][0] + CGFloat(direction[0]*20), blockPosArr[0][1] + CGFloat(direction[1]*20)]
+        
+        blockPosArr.insert(header_nex_pos, atIndex:0);
+        
+        if true {
+            blockPosArr.removeLast()
+        }
+        
+        for var idx = 0; idx < blockPosArr.count; idx++ {
+            blockArr[idx].position = CGPoint(x: blockPosArr[idx][0], y: blockPosArr[idx][1])
+        }
     }
     
+    func changeDirection(direct:Int[]) -> Bool {
+        if (direct[0]*direction[0] + direct[1]*direction[1]) != 0 {
+            return false
+        } else {
+            direction = direct
+            println(direction)
+            return true
+        }
+    }
     
 }
