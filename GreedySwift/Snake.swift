@@ -27,17 +27,20 @@ class Snake{
     // the direction of snake
     var direction:Int[] = [0, 1]
     
+    // the apple pos
+    var apple_pos:CGFloat[] = [0, 0]
     
     
-    init(sceneArr:CGFloat[], gameScene:GameScene){
+    init(sceneArr:CGFloat[], gameScene:GameScene, initial:Bool = true){
         self.sceneArr = sceneArr
         self.gameScene = gameScene
         self.blockPosArr = []
         self.blockArr = []
         
-        self.initialize()
+        if initial {
+            self.initialize()
+        }
         
-        println(blockPosArr)
     }
     
     // initilize snake with three blocks
@@ -73,22 +76,57 @@ class Snake{
         blockArr.append(block)
     }
     
-    func crawl() {
-//        println("crawl")
-//        blockPosArr[0][0] = blockPosArr[0][0]
-//        blockPosArr[0][1] = blockPosArr[0][1] + 20.0
-//        self.blockArr[0].position = CGPoint(x: blockPosArr[0][0], y: blockPosArr[0][1])
+    func crawl() -> Bool{
         var header_nex_pos = [blockPosArr[0][0] + CGFloat(direction[0]*20), blockPosArr[0][1] + CGFloat(direction[1]*20)]
         
         blockPosArr.insert(header_nex_pos, atIndex:0);
+        var last_pos = blockPosArr.removeLast()
         
-        if true {
-            blockPosArr.removeLast()
+        // check the snake hit something
+        var hit:Bool = false
+        
+        // if hit itself
+        for var idx = 1; idx < blockPosArr.count; idx++ {
+            if blockPosArr[0][0] == blockPosArr[idx][0] && blockPosArr[0][1] == blockPosArr[idx][1] {
+                hit = true
+                break
+            }else {
+                continue
+            }
+        
+        }
+        // if hit fence
+        if blockPosArr[0][0] - sceneArr[4] > 201 || blockPosArr[0][0] - sceneArr[4] < -201 || blockPosArr[0][1] - sceneArr[5] > 201 || blockPosArr[0][1] - sceneArr[5] < -201 {
+            hit = true
+        }
+        
+        if hit {
+            return false
+        }
+        
+        // check if snake will eat the apple
+        if blockPosArr[0][0] == apple_pos[0] && blockPosArr[0][1] == apple_pos[1] {
+            addOneBlock(last_pos[0], y: last_pos[1])
+            gameScene.apple.removeFromParent()
+            gameScene.drawApple(self.blockPosArr, mid_x: sceneArr[4], mid_y: sceneArr[5], gameScene: gameScene)
+            
+            // update current score and best score if necessary
+            gameScene.current_score++
+            gameScene.score1.text = String(gameScene.current_score)
+            if gameScene.current_score > gameScene.best_score {
+                gameScene.best_score = gameScene.current_score
+                gameScene.score0.text = String(gameScene.best_score)
+            }
+            
+        }else {
+            
         }
         
         for var idx = 0; idx < blockPosArr.count; idx++ {
             blockArr[idx].position = CGPoint(x: blockPosArr[idx][0], y: blockPosArr[idx][1])
         }
+        
+        return true
     }
     
     func changeDirection(direct:Int[]) -> Bool {
