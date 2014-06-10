@@ -28,7 +28,7 @@ class Snake{
     var direction:Int[] = [0, 1]
     
     // the apple pos
-    var apple_pos:CGFloat[] = [0, 0]
+    var applePos:CGFloat[] = [0, 0]
     
     
     init(sceneArr:CGFloat[], gameScene:GameScene, initial:Bool = true){
@@ -45,13 +45,13 @@ class Snake{
     
     // initilize snake with three blocks
     func initialize(){
-        self.addOneBlock(sceneArr[4], y: sceneArr[5], is_head: true)
+        self.addOneBlock(sceneArr[4], y: sceneArr[5], isHead: true)
         self.addOneBlock(sceneArr[4], y: sceneArr[5] - 20.0)
         self.addOneBlock(sceneArr[4], y: sceneArr[5] - 40.0)
     }
     
     
-    func addOneBlock(x:CGFloat, y:CGFloat, is_head:Bool = false){
+    func addOneBlock(x:CGFloat, y:CGFloat, isHead:Bool = false){
         var block = SKShapeNode()
         var path:CGMutablePathRef = CGPathCreateMutable()
         CGPathMoveToPoint(path, nil,  -10.0, -10.0)
@@ -62,7 +62,7 @@ class Snake{
         block.path = path
         block.fillColor = SKColor(red: 70.0/255.0, green: 70.0/255.0, blue: 70.0/255.0, alpha: 7.0)
         block.strokeColor = SKColor(red: 70.0/255.0, green: 70.0/255.0, blue: 70.0/255.0, alpha: 1.0)
-        if is_head {
+        if isHead {
             block.fillColor = SKColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
             block.strokeColor = SKColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
             block.name = "snake_head"
@@ -77,10 +77,10 @@ class Snake{
     }
     
     func crawl() -> Bool{
-        var header_nex_pos = [blockPosArr[0][0] + CGFloat(direction[0]*20), blockPosArr[0][1] + CGFloat(direction[1]*20)]
+        var headerNexPos = [blockPosArr[0][0] + CGFloat(direction[0]*20), blockPosArr[0][1] + CGFloat(direction[1]*20)]
         
-        blockPosArr.insert(header_nex_pos, atIndex:0);
-        var last_pos = blockPosArr.removeLast()
+        blockPosArr.insert(headerNexPos, atIndex:0);
+        var lastPos = blockPosArr.removeLast()
         
         // check the snake hit something
         var hit:Bool = false
@@ -105,17 +105,17 @@ class Snake{
         }
         
         // check if snake will eat the apple
-        if blockPosArr[0][0] == apple_pos[0] && blockPosArr[0][1] == apple_pos[1] {
-            addOneBlock(last_pos[0], y: last_pos[1])
+        if blockPosArr[0][0] == applePos[0] && blockPosArr[0][1] == applePos[1] {
+            addOneBlock(lastPos[0], y: lastPos[1])
             gameScene.apple.removeFromParent()
-            gameScene.drawApple(self.blockPosArr, mid_x: sceneArr[4], mid_y: sceneArr[5], gameScene: gameScene)
+            gameScene.drawApple(self.blockPosArr, midX: sceneArr[4], midY: sceneArr[5], gameScene: gameScene)
             
             // update current score and best score if necessary
-            gameScene.current_score++
-            gameScene.score1.text = String(gameScene.current_score)
-            if gameScene.current_score > gameScene.best_score {
-                gameScene.best_score = gameScene.current_score
-                gameScene.score0.text = String(gameScene.best_score)
+            gameScene.currentScore++
+            gameScene.score1.text = String(gameScene.currentScore)
+            if gameScene.currentScore > gameScene.bestScore {
+                gameScene.bestScore = gameScene.currentScore
+                gameScene.score0.text = String(gameScene.bestScore)
             }
             
         }else {
