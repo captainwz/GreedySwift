@@ -1,5 +1,5 @@
 ## greedy snake written in swift
-![](http://libcafe.com/swiftgif.gif)
+![](http://libcafe.com:8080/swiftgif.gif)
 
 
 * 接触swift的一些个人感受 
